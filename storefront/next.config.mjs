@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  allowedDevOrigins: ['*.tunnel.amboras.com'],
   distDir: process.env.NEXT_DIST_DIR ?? '.next',
   output: 'standalone',
   poweredByHeader: false,
