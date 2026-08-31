@@ -2,7 +2,7 @@
 const nextConfig = {
   allowedDevOrigins: ['*.tunnel.amboras.com'],
   distDir: process.env.NEXT_DIST_DIR ?? '.next',
-  output: 'standalone',
+  output: process.env.VERCEL ? undefined : 'standalone',
   poweredByHeader: false,
   compress: true,
   env: {
